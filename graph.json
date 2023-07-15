@@ -1,5 +1,4 @@
-{
-  "modules": [
+[
     {
       "source": "src/api/https/createOAuthURL.ts",
       "dependencies": [
@@ -313,5 +312,4 @@
       "source": "src/utils/pick.ts",
       "dependencies": []
     }
-  ]
-}
+]
