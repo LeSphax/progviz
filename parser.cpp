@@ -7,9 +7,9 @@
 #include <cstdlib>
 
 
-Module* load_json_file(const std::string filename, short* num_modules) {
+Module* load_json_file(const char* path, short* num_modules) {
     json_error_t error;
-    json_t *root = json_load_file("graph.json", 0, &error);
+    json_t *root = json_load_file(path, 0, &error);
 
     if (!root) {
         fprintf(stderr, "error: on line %d: %s\n", error.line, error.text);

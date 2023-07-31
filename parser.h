@@ -4,13 +4,14 @@
 
 #include <jansson.h>
 
-typedef struct {
+typedef struct
+{
     short id;
     std::string source;
     short num_dependencies;
-    short* dependencies;
+    short *dependencies;
 } Module;
 
-Module* load_json_file(const std::string filename, short* num_modules_out);
+Module *load_json_file(const char *filename, short *num_modules_out);
 
 #endif // PARSER_H
